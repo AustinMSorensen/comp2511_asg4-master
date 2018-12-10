@@ -1,0 +1,21 @@
+#content p::first-letter {
+    color: black;
+    font-size: 150%;
+}
+.image-list img {
+    display: inline;
+    width: auto;
+    height: 200px;
+    padding: 10px;
+}
+
+#price-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.stripped tr:nth-child(2) {
+    background-color: red;
+}

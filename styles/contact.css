@@ -1,0 +1,18 @@
+#content form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#content form label {
+    text-align: right;   
+}
+
+#content form input {
+    left: 10px;
+}
+
+input[type="reset"], input[type="submit"] {
+    margin: 20px;
+    width: auto;
+}
