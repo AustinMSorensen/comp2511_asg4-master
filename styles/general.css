@@ -6,10 +6,13 @@ header {
     padding: 10px;
     height: 10%;
     width: 98%; /* This is broken, should leave as auto but assignment requires. */
-    
 	align-items: center;
 	justify-content: space-between;
     background-image: url("../images/back.jpg");
+    background-size: cover; 
+    
+   
+    
 }
 
 img[src="images/logo.png"] {
@@ -24,6 +27,7 @@ img[src="images/logo.png"]:hover {
     animation-play-state: running;
 }
 
+    
 @keyframes spin {
     25% {
         transform: rotate(90deg);
@@ -40,7 +44,7 @@ img[src="images/logo.png"]:hover {
 }
 
 nav a span {
-    padding: 8px;
+    padding: 2px;
     border: 2px solid black;
     background-color: rgba(255,255,255,.9)
 }
@@ -60,8 +64,10 @@ nav a span:hover {
 #banner-background {
 	grid-column-start: 1;
 	grid-column-end: span 2;
+    background-size: cover; 
 	background-image: url("../images/banner3.png");
     border: none;
+    background-repeat: no-repeat; 
 }
 
 #banner-foreground {
@@ -73,6 +79,9 @@ nav a span:hover {
 
 #content {
 	background-color: rgba(255, 0, 0, .5);
+   @media only screen and (max-width: 600px)
+       background-color: lightblue; 
+    
 }
 
 .grid-item {
@@ -94,6 +103,13 @@ aside {
 a:hover{
     /* This is a test pseudo class*/
 }
+
+@media (min-width: 600px){
+    p {
+        font-size 1.25rem; 
+    }
+}
+
 footer {
     display: flex;
     justify-content: center;
