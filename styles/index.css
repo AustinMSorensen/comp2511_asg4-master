@@ -22,4 +22,5 @@ p {
 @media (min-width: 1000px){
 p {
         font-size: 2.00rem; 
+    }
 }
